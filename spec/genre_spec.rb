@@ -1,4 +1,4 @@
-require_relative '../Genre/genre'
+require_relative '../genre/genre'
 
 describe Genre do
   subject do

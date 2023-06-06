@@ -1,4 +1,4 @@
-require_relative '../MusicAlbum/music_album'
+require_relative '../music_album/music_album'
 
 describe MusicAlbum do
   subject do
