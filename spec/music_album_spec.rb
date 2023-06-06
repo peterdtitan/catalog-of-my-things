@@ -1,7 +1,8 @@
+require_relative '../MusicAlbum/music_album'
 
 describe MusicAlbum do
   subject do
-    MusicAlbum.new
+    MusicAlbum.new '12/12/2022', true
   end
 
   context '#can_be_archived?' do
