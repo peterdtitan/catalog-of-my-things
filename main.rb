@@ -1,11 +1,15 @@
-require './MusicAlbum/music_album_module'
+require './music_album/music_album_module'
+require './genre/genre_module'
+require './input/input_module'
 
 class Application
   def initialize
     @music_albums = []
   end
 
+  include INPUT
   include MUSICALBUM
+  include GENRE
 
   def user_input
     puts 'Select an option: '

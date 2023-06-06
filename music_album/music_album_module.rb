@@ -2,11 +2,6 @@ require 'json'
 require_relative './music_album'
 
 module MUSICALBUM
-  def get_input(msg)
-    print msg
-    gets.chomp
-  end
-
   def list_music_albums
     puts
     puts 'All music albums: '
