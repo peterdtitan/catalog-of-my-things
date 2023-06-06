@@ -6,7 +6,7 @@ describe Genre do
   end
 
   context '#add_item' do
-    it 'adds an item to its collection' do
+    it 'adds an item to the genre\'s collection' do
       new_item = double('item')
       allow(new_item).to receive(:genre=)
 
