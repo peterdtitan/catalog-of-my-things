@@ -5,6 +5,7 @@ require './input/input_module'
 class Application
   def initialize
     @music_albums = []
+    @all_genre = []
   end
 
   include INPUT
@@ -15,6 +16,8 @@ class Application
     puts 'Select an option: '
     puts '1. Add a music album'
     puts '2. List all music albums'
+    puts '3. Add a genre'
+    puts '4. List all genre'
     puts '7. Exit application'
     print 'Your input: '
     gets.chomp.to_i
@@ -26,6 +29,10 @@ class Application
       add_music_album
     when 2
       list_music_albums
+    when 3
+      add_genre
+    when 4
+      list_all_genre
     end
   end
 
@@ -36,6 +43,7 @@ class Application
 
   def load_data
     load_music_albums
+    load_genre
   end
 
   def run
