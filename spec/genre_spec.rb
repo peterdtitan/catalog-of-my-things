@@ -1,6 +1,8 @@
+require_relative '../Genre/genre'
+
 describe Genre do
   subject do
-    Genre.new
+    Genre.new 'Genre 1'
   end
 
   context "#add_item" do
