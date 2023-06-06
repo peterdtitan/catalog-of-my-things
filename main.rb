@@ -5,7 +5,7 @@ require './input/input_module'
 class Application
   def initialize
     @music_albums = []
-    @all_genre = []
+    @genres = []
   end
 
   include INPUT
@@ -17,7 +17,7 @@ class Application
     puts '1. Add a music album'
     puts '2. List all music albums'
     puts '3. Add a genre'
-    puts '4. List all genre'
+    puts '4. List all genres'
     puts '7. Exit application'
     print 'Your input: '
     gets.chomp.to_i

@@ -5,7 +5,7 @@ module GENRE
   def list_all_genre
     puts
     puts 'All genres:'
-    @all_genre.each do |genre|
+    @genres.each do |genre|
       puts genre.name
     end
   end
@@ -13,21 +13,21 @@ module GENRE
   def add_genre
     name = get_input('Enter genre name: ')
     genre = Genre.new(name)
-    @all_genre << genre
+    @genres << genre
     save_genre
     puts 'Genre saved!'
   end
 
   def save_genre
-    all_genre = []
-    @all_genre.each do |genre|
-      all_genre << {
+    genres = []
+    @genres.each do |genre|
+      genres << {
         id: genre.id,
         name: genre.name
       }
     end
-    genre_json = JSON.generate(all_genre)
-    File.write('./data/genre.json', genre_json)
+    genres_json = JSON.generate(genres)
+    File.write('./data/genre.json', genres_json)
   end
 
   def read_genre_data
@@ -41,14 +41,14 @@ module GENRE
   end
 
   def load_genre
-    all_genre_data = read_genre_data
-    return unless all_genre_data
+    genres_data = read_genre_data
+    return unless genres_data
 
-    all_genre_data.each do |genre|
+    genres_data.each do |genre|
       id = genre['id']
       name = genre['name']
       new_genre = Genre.new(name, id: id)
-      @all_genre << new_genre
+      @genres << new_genre
     end
   end
 end
