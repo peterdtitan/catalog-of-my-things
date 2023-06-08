@@ -2,7 +2,7 @@ require 'json'
 require_relative './book'
 require_relative '../Label/label'
 
-module BookModule
+module BOOK
   def get_data(txt)
     puts txt
     gets.chomp

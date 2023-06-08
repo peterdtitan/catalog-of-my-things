@@ -4,10 +4,16 @@ module GAME
   def list_all_games
     puts 'No game available!' if @games.empty?
     return if @games.empty?
+
     puts
     puts 'All games:'
     @games.each do |game|
-      puts "ID: #{game.id}, Multiplayer: #{game.multiplayer}, Last played at: #{game.last_played_at}, Publish date: #{game.publish_date}"
+      puts "
+      ID: #{game.id},
+      Multiplayer: #{game.multiplayer},
+      Last played at: #{game.last_played_at},
+      Publish date: #{game.publish_date}
+      "
     end
   end
 

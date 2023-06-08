@@ -1,4 +1,4 @@
-module LabelModule
+module LABEL
   def add_label
     title = get_data('Enter label title: ')
     color = get_data('Enter color: ')
