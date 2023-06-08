@@ -10,6 +10,13 @@ class Item
     @archived = archived
   end
 
+  def label=(label)
+    @label = label
+    label.items << self unless label.items.include?(self)
+  end
+
+  private
+
   def can_be_archived?
     date = Date.parse(@publish_date).year
     date_now = Date.today.year
@@ -18,10 +25,5 @@ class Item
 
   def move_to_archive
     @archived = true if can_be_archived?
-  end
-
-  def label=(label)
-    @label = label
-    label.items << self unless label.items.include?(self)
   end
 end
