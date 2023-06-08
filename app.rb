@@ -18,6 +18,7 @@ class Application
   include MUSICALBUM
   include GENRE
   include BookModule
+  include LabelModule
 
   def user_input
     puts 'Select an option: '
