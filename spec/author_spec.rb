@@ -19,6 +19,8 @@ describe Author do
   context '#add_item' do 
     it 'adds an item to the author\'s items' do
       new_item = double('item')
+      allow(new_item).to receive(:author=)
+      
       subject.add_item(new_item)
       expect(subject.items).to include(new_item)
     end
