@@ -1,7 +1,7 @@
 require 'json'
 require_relative './label'
 
-module LabelModule
+module LABEL
   def add_label
     title = get_data('Enter label title: ')
     color = get_data('Enter color: ')
@@ -26,8 +26,9 @@ module LabelModule
   def list_all_labels
     puts 'Nothing to list here!' if @labels.empty?
     @labels.each do |label|
-      puts "\nLabel ID: #{label.id} Title: #{label.title} Color: #{label.color}"
+      puts "\nTitle: #{label.title} Color: #{label.color}"
     end
+    puts
   end
 
   def read_labels
@@ -45,10 +46,9 @@ module LabelModule
     return unless labels
 
     labels.each do |label|
-      id = label['id']
       title = label['title']
       color = label['color']
-      new_label = Label.new(title, color, id: id)
+      new_label = Label.new(title, color)
       @labels << new_label
     end
   end

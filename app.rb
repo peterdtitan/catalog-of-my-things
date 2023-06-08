@@ -21,8 +21,8 @@ class Application
   include GENRE
   include GAME
   include AUTHOR
-  include BookModule
-  include LabelModule
+  include BOOK
+  include LABEL
 
   def user_input
     puts 'Select an option: '
@@ -84,6 +84,7 @@ class Application
 
   def load_data
     load_books
+    load_labels
     load_music_albums
     load_genre
     load_games
