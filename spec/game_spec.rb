@@ -9,7 +9,7 @@ describe Game do
     Game.new(multiplayer, publish_date, last_played_at: last_played_at, archived: true)
   end
 
-  describe '#initialize' do
+  context '#initialize' do
     it 'sets the multiplayer flag' do
       expect(subject.multiplayer).to eq(multiplayer)
     end
@@ -23,7 +23,7 @@ describe Game do
     end
   end
 
-  describe '#can_be_archived?' do
+  context '#can_be_archived?' do
     it 'returns true if the item is older than 2 years and parent can be archived' do
       subject.last_played_at = '2020/03/02'
       expect(subject.can_be_archived?).to eq true
