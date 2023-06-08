@@ -20,9 +20,9 @@ class Application
   include MUSICALBUM
   include GENRE
   include GAME
-  include LABEL
-  include BOOK
   include AUTHOR
+  include BookModule
+  include LabelModule
 
   def user_input
     puts 'Select an option: '

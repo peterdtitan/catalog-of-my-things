@@ -1,4 +1,7 @@
-module LABEL
+require 'json'
+require_relative './label'
+
+module LabelModule
   def add_label
     title = get_data('Enter label title: ')
     color = get_data('Enter color: ')
@@ -12,7 +15,6 @@ module LABEL
     all_labels = []
     @labels.each do |label|
       all_labels << {
-        id: label.id,
         title: label.title,
         color: label.color
       }
