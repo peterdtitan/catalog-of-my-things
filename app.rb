@@ -1,10 +1,10 @@
 require './music_album/music_album_module'
 require './genre/genre_module'
+require './author/author_module'
 require './input/input_module'
-require './book/book_module'
-require './book/book'
-require './label/label'
-require './label/label_module'
+require './Book/book_module'
+require './game/game_module'
+require './Label/label_module'
 
 class Application
   def initialize
@@ -12,25 +12,33 @@ class Application
     @labels = []
     @music_albums = []
     @genres = []
+    @games = []
+    @authors = []
   end
 
   include INPUT
   include MUSICALBUM
   include GENRE
+  include GAME
+  include AUTHOR
   include BookModule
   include LabelModule
 
   def user_input
     puts 'Select an option: '
-    puts '1. Add a Book'
+    puts '1. Add a book'
     puts '2. List all books'
-    puts '3. Add a Label'
+    puts '3. Add a label'
     puts '4. List all labels'
     puts '5. Add a music album'
     puts '6. List all music albums'
     puts '7. Add a genre'
     puts '8. List all genres'
-    puts '9. Exit application'
+    puts '9. Add a game'
+    puts '10. List all games'
+    puts '11. Add an author'
+    puts '12. List all authors'
+    puts '13. Exit application'
     print 'Your input: '
     gets.chomp.to_i
   end
@@ -58,6 +66,14 @@ class Application
       add_genre
     when 8
       list_all_genre
+    when 9
+      add_game
+    when 10
+      list_all_games
+    when 11
+      add_author
+    when 12
+      list_all_authors
     end
   end
 
@@ -70,18 +86,20 @@ class Application
     load_books
     load_music_albums
     load_genre
+    load_games
+    load_authors
   end
 
   def run
     load_data
     loop do
       input = user_input
-      puts 'Thanks for using the app, goodbye!' if input == 9
-      break if input == 9
+      puts 'Thanks for using the app, goodbye!' if input == 13
+      break if input == 13
 
       process1(input) if (1..6).to_a.include?(input)
-      process2(input) if (7..8).to_a.include?(input)
-      invalid_option unless (1..8).to_a.include?(input)
+      process2(input) if (7..12).to_a.include?(input)
+      invalid_option unless (1..12).to_a.include?(input)
 
       puts 'Press [Enter] to continue....'
       gets
