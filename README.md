@@ -49,8 +49,6 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 - **Six classes and demonstration of inheritance**
 - **Modular code and features**
 - **Test coverage for class/methods**
