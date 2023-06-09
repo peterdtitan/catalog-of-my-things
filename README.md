@@ -65,7 +65,7 @@
 
 > Below is a link to watch the project presentation for features and explanation.
 
-- [Live Demo Link](https://google.com)
+- [Live Presentation Link](https://google.com](https://drive.google.com/file/d/1yszhTZH7aPzi0qOFMQ9Nu2KkZzvUi_GL/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
