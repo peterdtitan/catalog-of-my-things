@@ -25,4 +25,18 @@ describe Book do
       expect(book_instance.id).not_to be_nil
     end
   end
+
+  context '#can_be_archived?' do
+    it 'returns true if a book\'s publish date is older than ten years' do
+      expect(book_instance.can_be_archived?).to eq true
+    end
+    it 'returns false if a book\'s publish date is earlier than ten years and the cover state is good' do
+      new_book = Book.new('2020/01/01', 'Macmillian', false, cover_state: 'good')
+      expect(new_book.can_be_archived?).to eq false
+    end
+    it 'returns true if a book\'s publish date is earlier than ten years and the cover state is bad' do
+      new_book = Book.new('2020/01/01', 'Macmillian', false, cover_state: 'bad')
+      expect(new_book.can_be_archived?).to eq true
+    end
+  end
 end
