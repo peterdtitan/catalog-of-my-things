@@ -119,8 +119,6 @@ This project is run locally on the CLI and has no deployments.
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
 👤 **Peter Okorafor**
 
 - GitHub: [@peterdtitan](https://github.com/peterdtitan)
