@@ -30,7 +30,6 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-<!-- PROJECT DESCRIPTION -->
 
 # 📖 Catalog Of My Things <a name="about-project"></a>
 
@@ -47,7 +46,6 @@
   </ul>
 </details>
 
-<!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
@@ -59,21 +57,17 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
+
 
 ## 🚀 Live Presentation<a name="live-demo"></a>
-
-> Below is a link to watch the project presentation for features and explanation.
 
 - [Live Presentation Link](https://google.com](https://drive.google.com/file/d/1yszhTZH7aPzi0qOFMQ9Nu2KkZzvUi_GL/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
+
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -145,7 +139,7 @@ This project is run locally on the CLI and has no deployments.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
+
 
 ## 🔭 Future Features <a name="future-features"></a>
 
@@ -153,7 +147,7 @@ This project is run locally on the CLI and has no deployments.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- CONTRIBUTING -->
+
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -163,7 +157,7 @@ Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- SUPPORT -->
+
 
 ## ⭐️ Show your support <a name="support"></a>
 
