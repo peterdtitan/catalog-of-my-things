@@ -84,6 +84,7 @@ class Application
 
   def load_data
     load_books
+    load_labels
     load_music_albums
     load_genre
     load_games
