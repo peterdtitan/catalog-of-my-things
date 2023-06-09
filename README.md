@@ -127,9 +127,11 @@ This project is run locally on the CLI and has no deployments.
 - Twitter: [@PeterDeTitan](https://twitter.com/PeterDeTitan)
 - LinkedIn: [Peter OKorafor](https://linkedin.com/in/peterokorafor)
 
+
 👤 **Precious Betine**
 
 - GitHub: [@preciousbetine](https://github.com/preciousbetine)
+
 
 👤 **Yidnekachew Kassahun Kibret**
 
@@ -141,7 +143,10 @@ This project is run locally on the CLI and has no deployments.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> There will be no future features available for this project as it will be deprecated soon.
+There will be no future features available for this project as it will be deprecated soon. However, the following may be done:
+- Code Refactoring
+- Modification of modules
+- More unit tests.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
