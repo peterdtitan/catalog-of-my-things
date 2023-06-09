@@ -1,4 +1,4 @@
-require_relative '../label/label'
+require_relative '../Label/label'
 
 describe Label do
   subject do
